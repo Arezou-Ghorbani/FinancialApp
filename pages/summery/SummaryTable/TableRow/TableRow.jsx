@@ -11,7 +11,7 @@ const TableRow = ({category, amount, color}) => {
 
     return(
         <View style={{...styles.container, borderColor: color}}>
-            <Ionicons style={styles.icon} name={icon} size={30} />
+            <Ionicons style={styles.icon} name={icon} size={30} color={color}/>
             <View style={styles.textContainer}>
                 <Text style={styles.category}>{category}</Text>
                 <Text style={styles.amount}>$ {amount.toFixed(2)}</Text>

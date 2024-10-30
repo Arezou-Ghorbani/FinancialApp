@@ -1,47 +1,47 @@
 export default myIcons = (category) => {
-    let categoryIcon;
+    let constIcon;
     switch(category){
         case 'Leisure':
-            categoryIcon = "fast-food-outline";
+            constIcon = "fast-food-outline";
             break;
         case 'Education':
-            categoryIcon = "school-outline";
+            constIcon = "school-outline";
             break;
         case 'Health':
-            categoryIcon = "bandage-outline";
+            constIcon = "bandage-outline";
             break;
         case 'Groceries':
-            categoryIcon = "bag-handle-outline";
+            constIcon = "bag-handle-outline";
             break;
         case 'Services & utilities':
-            categoryIcon = "bulb-outline";
+            constIcon = "bulb-outline";
             break;
         case 'Income':
-            categoryIcon = "cash-outline";
+            constIcon = "cash-outline";
             break;
         case 'Shopping':
-            categoryIcon = "cart-outline";
+            constIcon = "cart-outline";
             break;
         case 'Transportation':
-            categoryIcon = "car-sport-outline";
+            constIcon = "car-sport-outline";
             break;
         case 'Food':
-            categoryIcon = "restaurant-outline";
+            constIcon = "restaurant-outline";
             break;
         case 'Housing':
-            categoryIcon = "home-outline";
+            constIcon = "home-outline";
             break;
         case 'Pets':
-            categoryIcon = "paw-outline";
+            constIcon = "paw-outline";
             break;
         case 'Entertainment':
-            categoryIcon = "film-outline";
+            constIcon = "film-outline";
             break;
         case 'Gifts':
-            categoryIcon = "gift-outline";
+            constIcon = "gift-outline";
             break;
         default:
-            categoryIcon = "bar-chart-outline";
+            constIcon = "bar-chart-outline";
     }
-    return categoryIcon;
+    return constIcon;
 }

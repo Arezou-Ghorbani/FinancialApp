@@ -1,6 +1,6 @@
 import uuid from 'react-native-uuid';
 
-const days = 30
+const days = 30;
 const method = {
     credit: "Card - ****9876",
     debit: "Card - ****5432",
@@ -18,14 +18,13 @@ const method = {
     directDeposit: "Direct Deposit - Account #56789",
     wireTransfer: "Wire Transfer - Ref: 123ABC",
     mobilePayment: "Mobile Payment - App ID 98765",
-}
+};
 
 const getRandomDate = () => {
-    const days = 30; 
     return new Date(new Date().getTime() - (1000 * 60 * 60 * 24 * (Math.random() * days))).toISOString();
-}
+};
 
-export default transactioManager = [
+const transactioManager = [
     {
         id: uuid.v4(),
         desc: "Amazon Purchase",
@@ -33,6 +32,11 @@ export default transactioManager = [
         amount: 59.99,
         date: getRandomDate(),
         paymentMethod: method.credit,
+        location: "Online",
+        transactionId: "TXN123456",
+        status: "Completed",
+        currency: "USD",
+        notes: "Gift for friend",
     },
     {
         id: uuid.v4(),
@@ -41,6 +45,11 @@ export default transactioManager = [
         amount: 29.99,
         date: getRandomDate(),
         paymentMethod: method.debit,
+        location: "Local Gym",
+        transactionId: "TXN123457",
+        status: "Completed",
+        currency: "USD",
+        notes: "Monthly fee",
     },
     {
         id: uuid.v4(),
@@ -49,6 +58,11 @@ export default transactioManager = [
         amount: 25.00,
         date: getRandomDate(),
         paymentMethod: method.cash,
+        location: "Cinema",
+        transactionId: "TXN123458",
+        status: "Completed",
+        currency: "USD",
+        notes: "Date night",
     },
     {
         id: uuid.v4(),
@@ -57,6 +71,11 @@ export default transactioManager = [
         amount: 45.76,
         date: getRandomDate(),
         paymentMethod: method.debit,
+        location: "Shell Gas Station",
+        transactionId: "TXN123459",
+        status: "Completed",
+        currency: "USD",
+        notes: "Fuel for the car",
     },
     {
         id: uuid.v4(),
@@ -65,6 +84,11 @@ export default transactioManager = [
         amount: 1200.00,
         date: getRandomDate(),
         paymentMethod: method.bank,
+        location: "Apartment Complex",
+        transactionId: "TXN123460",
+        status: "Completed",
+        currency: "USD",
+        notes: "Rent for March",
     },
     {
         id: uuid.v4(),
@@ -73,6 +97,11 @@ export default transactioManager = [
         amount: 63.45,
         date: getRandomDate(),
         paymentMethod: method.credit,
+        location: "Bistro Café",
+        transactionId: "TXN123461",
+        status: "Completed",
+        currency: "USD",
+        notes: "Dinner with family",
     },
     {
         id: uuid.v4(),
@@ -81,6 +110,11 @@ export default transactioManager = [
         amount: 199.99,
         date: getRandomDate(),
         paymentMethod: method.transfer,
+        location: "Online",
+        transactionId: "TXN123462",
+        status: "Completed",
+        currency: "USD",
+        notes: "Web development course",
     },
     {
         id: uuid.v4(),
@@ -89,6 +123,11 @@ export default transactioManager = [
         amount: 150.00,
         date: getRandomDate(),
         paymentMethod: method.cash,
+        location: "Stadium",
+        transactionId: "TXN123463",
+        status: "Completed",
+        currency: "USD",
+        notes: "Concert with friends",
     },
     {
         id: uuid.v4(),
@@ -97,6 +136,11 @@ export default transactioManager = [
         amount: 85.50,
         date: getRandomDate(),
         paymentMethod: method.debit,
+        location: "Local Grocery",
+        transactionId: "TXN123464",
+        status: "Completed",
+        currency: "USD",
+        notes: "Weekly groceries",
     },
     {
         id: uuid.v4(),
@@ -105,6 +149,11 @@ export default transactioManager = [
         amount: 2000.00,
         date: getRandomDate(),
         paymentMethod: method.bank,
+        location: "N/A",
+        transactionId: "TXN123465",
+        status: "Completed",
+        currency: "USD",
+        notes: "Payment for services",
     },
     {
         id: uuid.v4(),
@@ -113,6 +162,11 @@ export default transactioManager = [
         amount: 32.20,
         date: getRandomDate(),
         paymentMethod: method.credit,
+        location: "Pet Store",
+        transactionId: "TXN123466",
+        status: "Completed",
+        currency: "USD",
+        notes: "Food and toys for pet",
     },
     {
         id: uuid.v4(),
@@ -121,6 +175,11 @@ export default transactioManager = [
         amount: 12.99,
         date: getRandomDate(),
         paymentMethod: method.transfer,
+        location: "Online",
+        transactionId: "TXN123467",
+        status: "Completed",
+        currency: "USD",
+        notes: "Streaming service",
     },
     {
         id: uuid.v4(),
@@ -129,6 +188,11 @@ export default transactioManager = [
         amount: 95.23,
         date: getRandomDate(),
         paymentMethod: method.bank,
+        location: "Online",
+        transactionId: "TXN123468",
+        status: "Completed",
+        currency: "USD",
+        notes: "Electricity bill",
     },
     {
         id: uuid.v4(),
@@ -137,6 +201,11 @@ export default transactioManager = [
         amount: 120.00,
         date: getRandomDate(),
         paymentMethod: method.debit,
+        location: "Shoe Store",
+        transactionId: "TXN123469",
+        status: "Completed",
+        currency: "USD",
+        notes: "Running shoes",
     },
     {
         id: uuid.v4(),
@@ -145,5 +214,12 @@ export default transactioManager = [
         amount: 50.00,
         date: getRandomDate(),
         paymentMethod: method.cash,
+        location: "Online",
+        transactionId: "TXN123470",
+        status: "Completed",
+        currency: "USD",
+        notes: "Gift for friend’s birthday",
     },
 ];
+
+export default transactioManager;

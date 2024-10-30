@@ -22,7 +22,13 @@ const TransactionDetail = () => {
 
                 <DetailRow label={"Category"} value={transaction.category} />
                 <DetailRow label={"Amount"} value={`$ ${transaction.amount.toFixed(2)}`} />
-        
+            
+        <DetailRow label={"location"} value={transaction.location} />
+        <DetailRow label={"transactionId"} value={transaction.transactionId} />
+        <DetailRow label={"currency"} value={transaction.currency} />
+        <DetailRow label={"notes"} value={transaction.notes} />
+        <DetailRow label={"status"} value={transaction.status} />
+
             </View>
         </View>
         
