@@ -5,6 +5,7 @@ import styles from "./DetailRowStyles";
 
 const DetailRow = ({label, value}) => {
     return(
+        <View>
         <View style={styles.container}>
             <Text style={styles.label}>
                 {label}
@@ -12,7 +13,11 @@ const DetailRow = ({label, value}) => {
             <Text style={styles.value}>
                 {value}
             </Text>
+            </View>
+            <View style={styles.divider}/>
+
         </View>
+
     )
 }
 export default DetailRow

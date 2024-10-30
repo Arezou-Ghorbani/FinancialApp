@@ -11,10 +11,16 @@ export default DetailRowStyles = StyleSheet.create({
         padding: 10,
 
     },
+    divider: {
+        height: 1, // Height of the line
+        backgroundColor: '#ccc', // Color of the line
+   
+    },
     label: {
         fontWeight: 'bold',
     },
     value: {
-
+color:'green'
     },
+
 })

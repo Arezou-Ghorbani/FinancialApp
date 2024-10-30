@@ -22,6 +22,7 @@ export default TableRowStyles = StyleSheet.create({
     },
     icon: {
         padding: 5,
+        
     },
     category: {
         fontSize: 18,
