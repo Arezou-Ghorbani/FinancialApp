@@ -1,19 +1,18 @@
 import { View, Text, TouchableHighlight } from "react-native";
 import Ionicons from '@expo/vector-icons/Ionicons';
 import styles from "./TransactionCardStyles";
-import getCategoryIcon from "../../../constants/Icons";
+import providedIcons from "../../../constants/Icons";
 import { useNavigation } from "@react-navigation/native";
 
 
 const TransactionCard = ({data}) => {
 
-    // defining the icon for the category
-    let categoryIcon = getCategoryIcon(data.category)
+    let recordIcon = providedIcons(data.category)
 
     const navigation = useNavigation()
 
     const onTap = () => {
-        navigation.navigate("Transaction Detail", {data})
+        navigation.navigate(" Detail Page", {data})
     }
 
     return(
@@ -25,7 +24,7 @@ const TransactionCard = ({data}) => {
             <>
             <View style={styles.image}>
                 <Ionicons 
-                    name={categoryIcon}
+                    name={recordIcon}
                     size={24}
                     color={'green'}
                     />

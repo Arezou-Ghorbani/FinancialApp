@@ -1,7 +1,7 @@
 import { useRoute } from "@react-navigation/native";
 import React from "react";
 import { View, Text } from "react-native";
-import DetailRow from "./DetailRow/DetailRow";
+import DetailItems from "./Items/DetailRow";
 import styles from "./TransactionDetailStyles";
 
 
@@ -16,18 +16,18 @@ const TransactionDetail = () => {
     return(
         <View style={styles.container}>
             <View style={styles.receipt}>
-                <DetailRow label={"Type"} value={transaction.desc} />
-                <DetailRow label={"Payment Type"} value={transaction.paymentMethod} />
-                <DetailRow label={"Transaction Date"} value={`  ${time}   ${date}`} />
+                <DetailItems label={"Type"} value={transaction.desc} />
+                <DetailItems label={"Payment Type"} value={transaction.paymentMethod} />
+                <DetailItems label={"Transaction Date"} value={`  ${time}   ${date}`} />
 
-                <DetailRow label={"Category"} value={transaction.category} />
-                <DetailRow label={"Amount"} value={`$ ${transaction.amount.toFixed(2)}`} />
+                <DetailItems label={"Category"} value={transaction.category} />
+                <DetailItems label={"Amount"} value={`$ ${transaction.amount.toFixed(2)}`} />
             
-        <DetailRow label={"location"} value={transaction.location} />
-        <DetailRow label={"transactionId"} value={transaction.transactionId} />
-        <DetailRow label={"currency"} value={transaction.currency} />
-        <DetailRow label={"notes"} value={transaction.notes} />
-        <DetailRow label={"status"} value={transaction.status} />
+        <DetailItems label={"location"} value={transaction.location} />
+        <DetailItems label={"transactionId"} value={transaction.transactionId} />
+        <DetailItems label={"currency"} value={transaction.currency} />
+        <DetailItems label={"notes"} value={transaction.notes} />
+        <DetailItems label={"status"} value={transaction.status} />
 
             </View>
         </View>
