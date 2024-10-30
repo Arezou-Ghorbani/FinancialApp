@@ -1,4 +1,4 @@
-const ColorsChart = [
+const myColors = [
     '#519DE9', '#7CC674', '#73C5C5', '#8481DD', '#F6D173', '#EF9234',
     '#A30000', '#D2D2D2', '#004B95', '#38812F', '#005F60', '#3C3D99',
     '#F0AB00', '#C46100', '#470000', '#FFB300', '#FF6F61', '#6F2C91',
@@ -7,5 +7,5 @@ const ColorsChart = [
 ];
 
 export default ColorsChart = (n) => {
-    return ColorsChart.slice(0, n);
+    return myColors.slice(0, n);
 };

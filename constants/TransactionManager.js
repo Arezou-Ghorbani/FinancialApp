@@ -1,4 +1,6 @@
-// definition of the payment methods
+import uuid from 'react-native-uuid';
+
+const days = 30
 const method = {
     credit: "Card - ****9876",
     debit: "Card - ****5432",
@@ -23,7 +25,7 @@ const getRandomDate = () => {
     return new Date(new Date().getTime() - (1000 * 60 * 60 * 24 * (Math.random() * days))).toISOString();
 }
 
-export default placeholderData = [
+export default transactioManager = [
     {
         id: uuid.v4(),
         desc: "Amazon Purchase",

@@ -43,5 +43,5 @@ export default myIcons = (category) => {
         default:
             categoryIcon = "bar-chart-outline";
     }
-    return myIcons;
+    return categoryIcon;
 }
